@@ -91,9 +91,12 @@ p {
 }
 
 .thankYou-card {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
+}
+
+.rating-card{
 }
 
 .thankYou-card>p {
