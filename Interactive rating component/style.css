@@ -1,7 +1,7 @@
 :root {
     --main-bg-color : hsl(216, 12%, 8%);
     --card-bg-color : hsl(213, 19%, 18%);
-    --medium-grey : hsl(216, 12%, 54%);
+    --medium-grey : hsl(215, 10%, 32%);
     --light-grey : hsl(217, 12%, 63%);
     --white : hsl(0, 0%, 100%);
     --Orange : hsl(25, 97%, 53%);
@@ -13,4 +13,100 @@ body {
     height: auto;
     width: auto;
     background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: overpass;
+    box-sizing: border-box;
+}
+
+.card {
+    margin: 50px;
+    padding: 35px;
+    display: inline;
+    display: flex;
+    flex-flow: column wrap;
+    background-image: linear-gradient(to bottom, var(--medium-grey), var(--card-bg-color)); 
+    border-radius: 1rem;
+}
+
+.star-icon-link {
+    background-color: var(--medium-grey);
+    padding: 8px;
+    border-radius: 100%;
+}
+
+h2 {
+    color: var(--white);
+    margin: 22px 0 10px 0;
+}
+
+p {
+    color: var(--light-grey);
+    font-size: 15px;
+    display: inline-block;
+}
+
+.btn-rating {
+    display: inline-block;
+    color: var(--light-grey);
+    background-color: var(--main-bg-color);
+    width: 40px;
+    height: 40px;
+    outline-style:none;
+    border: none;
+    border-radius: 100px;
+    text-align: center;
+    margin: 0 15px 0 0;
+    font-weight: bold;
+}
+
+.btn-rating:hover {
+    background-color: var(--light-grey);
+    color: var(--white);
+}
+
+.rating-section {
+    margin: 10px 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.btn-submit {
+    background-color: var(--white);
+    color: var(--card-bg-color);
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+}
+
+.btn-submit:hover {
+    color: var(--Orange);
+}
+
+.btn-rating:focus {
+    background-color: var(--Orange);
+}
+
+.thankYou-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thankYou-card>p {
+    text-align: center;
+}
+
+.selection {
+    color: var(--Orange);
+    border-radius: 20px;
+    font-size: 18px;
+    padding: 8px;
+}
+h1 {
+    color: var(--white);
+    margin: 20px 0 0 0;
 }
